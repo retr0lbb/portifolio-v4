@@ -12,7 +12,7 @@ export default function Home(){
                         <li>About</li>
                         <li>Projects</li>
                         <li>Contact</li>
-                        <li>🔥</li>
+                        <li></li>
                     </ul>
                 </div>
             </nav>
