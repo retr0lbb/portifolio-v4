@@ -9,7 +9,7 @@ export default function Home(){
         <section className={styled.mainWrapper}>
             <nav className={styled.navWrapper}>
                 <div className={styled.logo}>
-                    ./H
+                    <p>./H</p>
                 </div>
                 <div className={styled.NavList}>
                     <ul className={styled.mainlist}>
