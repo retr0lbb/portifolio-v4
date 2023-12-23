@@ -1,0 +1,51 @@
+:root{
+    --corDeFundo:   #17202A;
+    --corDeTexto:   #E5E8E8;
+    --corAdicional: #2C3E50;
+    --corContraste: #3498DB;
+}
+
+.CardWrapper{
+    height: 600px;
+    width: 485px;
+    background-color: var(--corAdicional);
+    border-radius: 27px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 7.6px 0px rgba(0, 0, 0, 0.25);
+}
+.CardTitle{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--corDeTexto)
+}
+.CardImg{
+    width: 440px;
+    height: 235px;
+    background-color: black;
+}
+.CardDesc{
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--corDeTexto);
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.CardButton{
+    padding: 20px;
+    width: 373px;
+    height: 73px;
+    border-radius: 47px;
+    border: none;
+    color: var(--corDeTexto);
+    background-color: var(--corContraste);
+    font-size: 20px;
+    font-weight: bold;
+}

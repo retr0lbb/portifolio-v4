@@ -4,7 +4,7 @@ import aboutimg from "../../static/about.jpeg"
 
 export default function AboutPage(){
     return(
-        <section className={styled.AboutWrapper}>
+        <section id="about" className={styled.AboutWrapper}>
             <header className={styled.AboutHeader}>
                 About Me
             </header>
