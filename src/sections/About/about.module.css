@@ -1,0 +1,66 @@
+:root{
+    --corDeFundo:   #17202A;
+    --corDeTexto:   #E5E8E8;
+    --corAdicional: #2C3E50;
+    --corContraste: #3498DB;
+}
+
+
+.AboutWrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corDeFundo);
+}
+
+.AboutHeader{
+    font-size: 100px;
+    font-weight: bold;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--corDeTexto);
+}
+
+.AboutMainWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    gap: 7em
+}
+.AboutImage{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../static/about.jpeg);
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente a div */
+    background-position: center; /* Centraliza a imagem na div */
+    background-repeat: no-repeat;
+}
+.AboutText{
+    width: 40%;
+    height: 500px;
+    color: var(--corDeTexto);
+}
+.AboutText p{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--corDeTexto);
+}
+.StrongHi{
+    color: var(--corContraste);
+    font-size: 96px;
+}
+.strongVisibility{
+    color: var(--corContraste);
+    font-style: italic;
+}

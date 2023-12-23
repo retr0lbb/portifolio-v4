@@ -13,11 +13,11 @@ export default function Home(){
                 </div>
                 <div className={styled.NavList}>
                     <ul className={styled.mainlist}>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                        <li>😁</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">😁</a></li>
                     </ul>
                 </div>
             </nav>
@@ -29,9 +29,9 @@ export default function Home(){
                     <strong>Fullstack developer</strong>
                     </p>
                     <ul className={styled.linksWrapper}>
-                        <li> <FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/> </li>
-                        <li> <FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/> </li>
-                        <li> <FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/> </li>
+                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
+                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/></a> </li>
+                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/></a></li>
                     </ul>
                 </div>
                 <div className={styled.PhotoMainWrapper}>
