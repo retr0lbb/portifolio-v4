@@ -15,7 +15,7 @@ export default function Home(){
                     <ul className={styled.mainlist}>
                         <li><a href="#">Home</a></li>
                         <li><a href="/#about">About</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="/#projects">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">😁</a></li>
                     </ul>
@@ -29,7 +29,7 @@ export default function Home(){
                     <strong>Fullstack developer</strong>
                     </p>
                     <ul className={styled.linksWrapper}>
-                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
+                        <li><a target="blank" href="https://github.com/retr0lbb"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
                         <li><a target="blank" href="#"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/></a> </li>
                         <li><a target="blank" href="#"><FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/></a></li>
                     </ul>

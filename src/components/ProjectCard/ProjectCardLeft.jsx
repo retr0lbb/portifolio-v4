@@ -2,7 +2,7 @@ import styled from "./projectCardLeft.module.css";
 import {faChrome, faGithub} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";   
 
-export default function Card_left({src, desc, name, alt}){
+export default function Card_left({src, desc, name, alt, projectSrc, deploySrc}){
     return(
         <div className={styled.MainCard}>
             <img className={styled.CardPhoto} src={src} alt={alt} />
@@ -12,8 +12,8 @@ export default function Card_left({src, desc, name, alt}){
                     {desc}
                 </p>
                 <div className={styled.PButtons}>
-                    <button className={styled.ButtonBlue}><FontAwesomeIcon icon={faChrome} color="#E5E8E8" size="4x"/></button>
-                    <button className={styled.ButtonBlue}><FontAwesomeIcon icon={faGithub} color="#E5E8E8" size="4x"/></button>
+                    <a target="blank" href={projectSrc}><button className={styled.ButtonBlue}><FontAwesomeIcon icon={faGithub} color="#E5E8E8" size="4x"/></button></a>
+                    <a target="blank" href={deploySrc}><button className={styled.ButtonBlue}><FontAwesomeIcon icon={faChrome} color="#E5E8E8" size="4x"/></button></a>
                 </div>
             </div>
         </div>
