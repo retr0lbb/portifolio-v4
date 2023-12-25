@@ -1,0 +1,66 @@
+:root{
+    --corDeFundo:   #17202A;
+    --corDeTexto:   #E5E8E8;
+    --corAdicional: #2C3E50;
+    --corContraste: #3498DB;
+}
+
+
+.MainCard{
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    height: 400px;
+    align-items: center;
+    background-color: var(--corAdicional);
+    gap: 5em;
+    border-radius: 20px;
+    padding: 0px 20px 0px 0px;
+}
+.CardPhoto{
+    width: 600px;
+    height: 100%;
+    background-color: beige;
+    border-radius: 20px 0px 0px 20px;
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
+}
+.Pdiv{
+    padding: 20px;
+    height: 100%;
+}
+.PTitle{
+    text-align: left;
+    font-size: 48px;
+    color: var(--corContraste);
+    font-weight: bolder;
+}
+.PContent{
+    margin-top: 20px;
+    overflow: auto;
+    height: 160px;
+    text-align: left;
+    color: var(--corDeTexto);
+    font-size: 32px;
+    font-weight: bold;
+}
+.PButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+    align-self: flex-end; /* Alinha a div de botões na parte inferior */
+}
+
+.ButtonBlue {
+    margin-top: 25px;
+    border: none;
+    width: 105px;
+    height: 84px;
+    border-radius: 20px;
+    background-color: var(--corContraste);
+    color: var(--corDeTexto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

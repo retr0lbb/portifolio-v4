@@ -1,6 +1,7 @@
 import AboutPage from "./sections/About/About"
 import Home from "./sections/Home/Home"
 import FormationsPage from "./sections/Formation/formation.component"
+import Projects from "./sections/Projects/Projects"
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
     <Home />
     <AboutPage />
     <FormationsPage />
+    <Projects />
     </>
   )
 }

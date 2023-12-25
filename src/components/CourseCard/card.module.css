@@ -48,4 +48,9 @@
     background-color: var(--corContraste);
     font-size: 20px;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.CardButton:hover{
+    background-color: var(--corDeTexto);
+    color: var(--corContraste);
 }
