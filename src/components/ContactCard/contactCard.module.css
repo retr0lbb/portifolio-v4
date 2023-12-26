@@ -1,0 +1,54 @@
+/* Adicione suas variáveis globais se necessário */
+@import url(../../root.css);
+.ContactMainWrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--corAdicional);
+  border-radius: 21px;
+  padding: 20px;
+}
+.ContactText {
+  text-align: center;
+  font-size: 36px;
+  color: var(--corDeTexto);
+  font-weight: bold;
+  z-index: 2;
+}
+.ContactButton {
+    position: relative;
+    font-size: 36px;
+    color: var(--corDeTexto);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--corContraste);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .ContactButton::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Posição inicial da barra (abaixo do botão) */
+    left: 0;
+    width: 100%;
+    height: 0; /* Altura inicial da barra (invisível) */
+    background-color: green;
+    transition: height .3s ease-in-out; /* Adiciona uma transição suave à propriedade height */
+    z-index: -1;
+  }
+  
+  .ContactButton.active::before {
+    height: 100%; /* Altura final da barra (de baixo para cima) */
+    top: 0; /* Posição final da barra (acima do botão) */
+    z-index: -1;
+  }
+  
+  .buttonContent {
+    z-index: 10;
+  }

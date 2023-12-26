@@ -6,17 +6,17 @@ import {faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-ico
 
 export default function Home(){
     return(
-        <section className={styled.mainWrapper}>
+        <section id="home" className={styled.mainWrapper}>
             <nav className={styled.navWrapper}>
                 <div className={styled.logo}>
                     <p>./H</p>
                 </div>
                 <div className={styled.NavList}>
                     <ul className={styled.mainlist}>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/#home">Home</a></li>
                         <li><a href="/#about">About</a></li>
                         <li><a href="/#projects">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                         <li><a href="#">😁</a></li>
                     </ul>
                 </div>
