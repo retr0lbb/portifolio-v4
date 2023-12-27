@@ -1,10 +1,17 @@
 import styled from "./home.module.css"
-import React from "react"
-import initImg from "../../static/initImg.jpeg"
+import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons"
+import { useTranslation } from "react-i18next"
 
 export default function Home(){
+
+    const { t, i18n: {changeLanguage, language} } = useTranslation()
+    const [leng, setLeng] = useState(language);
+
+
+
+
     return(
         <section id="home" className={styled.mainWrapper}>
             <nav className={styled.navWrapper}>
@@ -13,20 +20,18 @@ export default function Home(){
                 </div>
                 <div className={styled.NavList}>
                     <ul className={styled.mainlist}>
-                        <li><a href="/#home">Home</a></li>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#projects">Projects</a></li>
-                        <li><a href="/#contact">Contact</a></li>
-                        <li><a href="#">😁</a></li>
+                        <li><a href="/#home">{t("home")}</a></li>
+                        <li><a href="/#about">{t("about")}</a></li>
+                        <li><a href="/#projects">{t("projects")}</a></li>
+                        <li><a href="/#contact">{t("contact")}</a></li>
+                        <li>NONE</li>
                     </ul>
                 </div>
             </nav>
             <div className={styled.mainBodyWrapper}>
                 <div className={styled.MainTextWrapper}>
                     <p>
-                    Hello! 👋,<br></br>
-                    I’m Henrique Barbosa Sampaio, a<br></br>
-                    <strong>Fullstack developer</strong>
+                        {t("HomeText")}
                     </p>
                     <ul className={styled.linksWrapper}>
                         <li><a target="blank" href="https://github.com/retr0lbb"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
