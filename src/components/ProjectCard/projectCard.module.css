@@ -70,3 +70,20 @@
 .ButtonBlue:hover{
     transform: scale(1.1);
 }
+
+.isLeftMain{
+    flex-direction: row;
+    padding: 0px 20px 0px 0px;
+}
+.isLeftPhoto{
+    border-radius: 20px 0px 0px 20px;
+}
+.isLeftTitle{
+    text-align: left;
+}
+.isLeftContent{
+    text-align: left;
+}
+.isLeftButtons{
+    flex-direction: row;
+}

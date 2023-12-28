@@ -6,6 +6,11 @@
         "contact": "Contact",
         "HomeTextpt1": "Hello! 👋,\n I'm Henrique\n Barbosa Sampaio, a\n ",
         "Full Stack Developer": "Full Stack Developer",
-        "AboutMe": "About me"
+        "AboutMe": "About me",
+        "Hi": "Hi",
+        "Pcon": "my name is Henrique, im a Full stack JavaScript developer, i usually work with React, React Native and Node.js, but, i’m currently learning C, C#, and C++. I like to play video games, tabletop rpg and basketball i programm since i was 15 and love making games too.",
+        "Formation": "Academic education",
+        "ETECDESC": "In high school at Etec Uirapuru I learned coding, it was a technical course focused on Systems Development, IOT training, database management, web development and mobile development.",
+        "certificate": "certificate"
     }
 }

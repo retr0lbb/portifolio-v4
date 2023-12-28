@@ -6,7 +6,11 @@
         "contact": "Contato",
         "HomeTextpt1": "Olá! 👋, Sou Henrique Barbosa Sampaio, um ",
         "Full Stack Developer": "Desenvolvedor Full Stack",
-        "AboutMe": "Sobre mim"
-        
+        "AboutMe": "Sobre mim",
+        "Hi": "Olá",
+        "Pcon": "meu nome é Henrique, sou desenvolvedor Full stack JavaScript, costumo trabalhar com React, React Native e Node.js, mas atualmente estou aprendendo C, C# e C++. Gosto de jogar videogame, RPG de mesa e basquete, programo desde os 15 anos e adoro fazer jogos também.",
+        "Formation": "Formação acadêmica",
+        "ETECDESC": "No ensino médio na Etec Uirapuru aprendi codificação, era um curso técnico voltado para Desenvolvimento de Sistemas, treinamento em IOT, gerenciamento de banco de dados, desenvolvimento web e desenvolvimento mobile.",
+        "certificate": "Certificado"
     }
 }
