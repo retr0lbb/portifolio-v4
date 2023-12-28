@@ -114,12 +114,14 @@ a:hover{
     transform: scale(1.2); /* Ajuste o valor conforme necessário para o efeito desejado */
     transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito */
 }
-
 strong{
     color: var(--corContraste);
 }
+.TStrong{
+    color: var(--corContraste);
+}
 .PhotoMainWrapper{
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
     align-items: center;

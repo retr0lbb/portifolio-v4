@@ -2,12 +2,12 @@ import styled from "./home.module.css"
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons"
-import { useTranslation } from "react-i18next"
+import {useTranslation } from "react-i18next"
+import Swap from "../../components/swapButton/swap"
 
 export default function Home(){
 
-    const { t, i18n: {changeLanguage, language} } = useTranslation()
-    const [leng, setLeng] = useState(language);
+    const { t } = useTranslation()
 
 
 
@@ -24,14 +24,14 @@ export default function Home(){
                         <li><a href="/#about">{t("about")}</a></li>
                         <li><a href="/#projects">{t("projects")}</a></li>
                         <li><a href="/#contact">{t("contact")}</a></li>
-                        <li>NONE</li>
+                        <li><Swap /></li>
                     </ul>
                 </div>
             </nav>
             <div className={styled.mainBodyWrapper}>
                 <div className={styled.MainTextWrapper}>
                     <p>
-                        {t("HomeText")}
+                        {t("HomeTextpt1")}<strong>{t("Full Stack Developer")}</strong>
                     </p>
                     <ul className={styled.linksWrapper}>
                         <li><a target="blank" href="https://github.com/retr0lbb"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>

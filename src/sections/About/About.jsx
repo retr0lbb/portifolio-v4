@@ -1,12 +1,14 @@
+import { useTranslation } from "react-i18next";
 import styled from "./about.module.css";
-import aboutimg from "../../static/about.jpeg"
 
 
 export default function AboutPage(){
+    const { t } = useTranslation()
+
     return(
         <section id="about" className={styled.AboutWrapper}>
             <header className={styled.AboutHeader}>
-                About Me
+                {t("AboutMe")}
             </header>
             <div className={styled.AboutMainWrapper}>
                 <div className={styled.AboutImage}>

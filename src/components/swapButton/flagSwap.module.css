@@ -1,0 +1,8 @@
+.flagIcon{
+    width: 60px;
+    height: 40px;
+    color: none;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente a div */
+    background-position: center; /* Centraliza a imagem na div */
+    background-repeat: no-repeat;
+}
