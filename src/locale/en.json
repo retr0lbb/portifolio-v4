@@ -11,6 +11,9 @@
         "Pcon": "my name is Henrique, im a Full stack JavaScript developer, i usually work with React, React Native and Node.js, but, i’m currently learning C, C#, and C++. I like to play video games, tabletop rpg and basketball i programm since i was 15 and love making games too.",
         "Formation": "Academic education",
         "ETECDESC": "In high school at Etec Uirapuru I learned coding, it was a technical course focused on Systems Development, IOT training, database management, web development and mobile development.",
-        "certificate": "certificate"
+        "certificate": "certificate",
+        "copy": "Copiar",
+        "coming soon": "Coming soon",
+        "projectDescNERD": "An e-commerce for digital games, which aims to reduce the price of games by creating a completely national platform and providing support for independent game developers"
     }
 }

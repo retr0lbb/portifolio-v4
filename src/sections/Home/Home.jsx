@@ -1,13 +1,31 @@
 import styled from "./home.module.css"
-import React, { useState } from "react"
+import React, { useEffect, useRef } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import {useTranslation } from "react-i18next"
 import Swap from "../../components/swapButton/swap"
 
-export default function Home(){
-
+export default function Home({onHeaderPositionChange }){
     const { t } = useTranslation()
+
+    const HeaderRef = useRef(null)
+
+    useEffect(()=>{
+        const handleScroll = () =>{
+            if(HeaderRef.current){
+                const { top } = HeaderRef.current.getBoundingClientRect()
+                console.log( "TOP ",top)
+                console.log("inner heigh " ,  window.innerHeight)
+                onHeaderPositionChange(top >  window.innerHeight - 300)
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+    }, [onHeaderPositionChange])
 
 
 
@@ -33,7 +51,7 @@ export default function Home(){
                     <p>
                         {t("HomeTextpt1")}<strong>{t("Full Stack Developer")}</strong>
                     </p>
-                    <ul className={styled.linksWrapper}>
+                    <ul ref={HeaderRef} className={styled.linksWrapper}>
                         <li><a target="blank" href="https://github.com/retr0lbb"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
                         <li><a target="blank" href="#"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/></a> </li>
                         <li><a target="blank" href="#"><FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/></a></li>

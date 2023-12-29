@@ -87,3 +87,11 @@
 .isLeftButtons{
     flex-direction: row;
 }
+.disAble{
+    background-color: #CF000F;
+    bottom: unset;
+    cursor: not-allowed;
+}
+.disAble:hover{
+    transform: scale(1);
+}
