@@ -159,5 +159,11 @@ strong{
         align-items: center;
         justify-content: center;
     }
+    .navWrapper{
+        height: 10vh;
+    }
+    .mainBodyWrapper{
+        margin-top: 10vh;
+    }
   }
   

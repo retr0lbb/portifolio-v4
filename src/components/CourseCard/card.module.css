@@ -50,3 +50,22 @@
     background-color: var(--corDeTexto);
     color: var(--corContraste);
 }
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .CardWrapper{
+        width: 400px;
+        height: 500px;
+        padding: 20px;
+    }
+    .CardImg{
+        width: 100%;
+        height: auto;
+    }
+    .CardDesc{
+        font-size: 14px;
+    }
+    .CardButton{
+        width: 90%;
+
+    }
+}

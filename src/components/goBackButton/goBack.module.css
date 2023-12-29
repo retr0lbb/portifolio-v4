@@ -8,7 +8,7 @@
     bottom: 0;
     right: 0;
     margin: 80px;
-    background-color: #2C3E50;
+    background: linear-gradient(180deg, #2C3E50, #17202A);
     border-radius: 100%;
     border: none;
 }
@@ -21,4 +21,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .GoBack{
+        margin: 20px;
+    }
 }

@@ -12,7 +12,7 @@ export default function Contact(){
             <div className={styled.ContactHeaderTitle}>{t("contact")}</div>
             <div className={styled.contactWrapper}>
                 <ContactCard icon={faMessage} message={"+55 (11)999429345"} copyContent="+5511999429345" />
-                <ContactCard icon={faEnvelope} message={"henrique.contato.dev@gmail.com"} copyContent="henrique.contato.dev@gmail.com"/>
+                <ContactCard icon={faEnvelope} message={"retr0lbb@gmail.com"} copyContent="retr0lbb@gmail.com"/>
                 <ContactCard icon={faLinkedin} message={"Henrique Barbosa"} copyContent="link do linkedin"/>
             </div>
         </section>

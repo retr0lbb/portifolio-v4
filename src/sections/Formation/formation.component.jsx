@@ -15,11 +15,14 @@ export default function FormationsPage(){
             </header>
             <div className={styled.FormationCoursesGrid}>
 
-                <div className={styled.gridItem}><CourseCard 
+                <div className={styled.gridItem}>
+                    <CourseCard 
                     title ="2021/2023 - ETIM DS" 
                     src={etec} 
                     desc={t("ETECDESC")}/>
                       </div>
+
+                      
 
             </div>
         </section>
