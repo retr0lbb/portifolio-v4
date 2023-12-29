@@ -6,26 +6,23 @@ import {useTranslation } from "react-i18next"
 import Swap from "../../components/swapButton/swap"
 
 export default function Home({onHeaderPositionChange }){
-    const { t } = useTranslation()
-
-    const HeaderRef = useRef(null)
+    const { t } = useTranslation();
+    const HeaderRef = useRef(null);
 
     useEffect(()=>{
         const handleScroll = () =>{
             if(HeaderRef.current){
                 const { top } = HeaderRef.current.getBoundingClientRect()
-                console.log( "TOP ",top)
-                console.log("inner heigh " ,  window.innerHeight)
                 onHeaderPositionChange(top >  window.innerHeight - 300)
             }
         };
 
-        window.addEventListener("scroll", handleScroll)
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
           };
-    }, [onHeaderPositionChange])
+    }, [onHeaderPositionChange]);
 
 
 

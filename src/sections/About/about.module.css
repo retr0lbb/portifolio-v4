@@ -1,10 +1,4 @@
-:root{
-    --corDeFundo:   #17202A;
-    --corDeTexto:   #E5E8E8;
-    --corAdicional: #2C3E50;
-    --corContraste: #3498DB;
-}
-
+@import url(../../root.css);
 
 .AboutWrapper{
     width: 100%;
@@ -63,4 +57,23 @@
 .strongVisibility{
     color: var(--corContraste);
     font-style: italic;
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .AboutMainWrapper{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .AboutText, .AboutText p{
+        width: 100%;
+        font-size: 28px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .AboutWrapper{
+        height: 120vh;
+    }
+    .StrongHi{
+        font-size: 64px;
+        text-align: center;
+    }
 }

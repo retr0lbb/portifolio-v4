@@ -1,9 +1,4 @@
-:root{
-    --corDeFundo:   #17202A;
-    --corDeTexto:   #E5E8E8;
-    --corAdicional: #2C3E50;
-    --corContraste: #3498DB;
-}
+@import url(../../root.css);
 button{
     border: none;
     background: none;
@@ -121,14 +116,13 @@ strong{
     color: var(--corContraste);
 }
 .PhotoMainWrapper{
-    width: 35%;
-    height: 100%;
+    width: 650px;
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center ;
 }
 .PhotoMainWrapper div{
-    margin-bottom: 5em;
     width: 650px;
     border-radius: 100%;
     height: 650px;
@@ -138,3 +132,32 @@ strong{
     background-position: center; /* Centraliza a imagem na div */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
+
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .mainBodyWrapper{
+        flex-direction: column-reverse;
+    }
+    .PhotoMainWrapper ,.PhotoMainWrapper div{
+        width: 400px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    .MainTextWrapper p{
+        font-size: 48px;
+        text-align: center;
+    }
+    .mainlist{
+        visibility: hidden;
+    }
+    .MainTextWrapper{
+        width: 100%;
+        padding: 0px 100px 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
