@@ -135,7 +135,7 @@ strong{
 
 
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 1150px) {
     .mainBodyWrapper{
         flex-direction: column-reverse;
     }
@@ -165,5 +165,32 @@ strong{
     .mainBodyWrapper{
         margin-top: 10vh;
     }
-  }
-  
+}
+@media screen and (min-width: 1151px) and (max-width: 1600px) {
+    .mainBodyWrapper{
+        flex-direction: row;
+    }
+    .PhotoMainWrapper, .PhotoMainWrapper div{
+        width: 550px;
+        height: 550px;
+        align-items: center;
+        justify-content: center;
+    }
+    .MainTextWrapper p{
+        font-size: 80px;
+        text-align: left;
+    }
+    .MainTextWrapper{
+        width: 100%;
+       
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .navWrapper{
+        height: 9vh;
+    }
+    .mainBodyWrapper{
+        margin-top: 9vh;
+    }
+}
