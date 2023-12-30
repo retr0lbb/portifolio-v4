@@ -123,3 +123,30 @@
         justify-content: center;
     }
 }
+@media screen and (min-width: 100px) and (max-width: 600px){
+    .MainCard{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 0px 0px 20px 0px;
+        gap: 1em;
+    }   
+    .CardPhoto{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .PTitle{
+        text-align: center;
+    }
+    .PContent{
+        font-size: 24px;
+        padding: 10px;
+        text-align: justify;
+        overflow: auto;
+
+    }
+    .PButtons{
+        align-items: center;
+        justify-content: center;
+    }
+}

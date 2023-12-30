@@ -147,7 +147,7 @@ strong{
 
 
 
-@media screen and (min-width: 200px) and (max-width: 1150px) {
+@media screen and (min-width: 601px) and (max-width: 1150px) {
     .hBtton{
         display: block;
         opacity: 1;
@@ -221,6 +221,60 @@ strong{
     }
     .mainBodyWrapper{
         margin-top: 9vh;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+    .linksWrapper{
+        width: 18em;
+        height: 5em;
+    }
+    .hBtton{
+        display: block;
+        opacity: 1;
+    }
+    .cButton{
+        display: block;
+        opacity: 1;
+    }
+    .mainBodyWrapper{
+        flex-direction: column-reverse;
+    }
+    .PhotoMainWrapper ,.PhotoMainWrapper div{
+        margin-top: 30px;
+        width: 350px;
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    .MainTextWrapper p{
+        padding: 0px 10px 0px 10px;
+        font-size: 38px;
+        text-align: center;
+    }
+    .mainlist{
+        transition: transform 0.5s ease-out;
+        flex-direction: column;
+        background-color: var(--corAdicional);
+        position: fixed;
+        visibility: visible;
+        transform: translateY(-100%);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        gap: 1.5rem;
+    }
+    .MainTextWrapper{
+        width: 100%;
+        padding: 0px 100px 0px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navWrapper{
+        height: 10vh;
+    }
+    .mainBodyWrapper{
+        margin-top: 10vh;
     }
 }
 .show{

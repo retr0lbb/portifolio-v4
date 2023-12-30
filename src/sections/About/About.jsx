@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styled from "./about.module.css";
+import about from "../../static/about.jpeg"
 
 
 export default function AboutPage(){
@@ -11,9 +12,7 @@ export default function AboutPage(){
                 {t("AboutMe")}
             </header>
             <div className={styled.AboutMainWrapper}>
-                <div className={styled.AboutImage}>
-
-                </div>
+                <img src={about} className={styled.AboutImage} />
                 <div className={styled.AboutText}>
                     <p>
                     <strong className={styled.StrongHi}>{t("Hi")}</strong>,<br></br>
