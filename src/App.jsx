@@ -18,14 +18,14 @@ function App() {
 
 
   return (
-    <>
+    <body>
     <GoBack showButton={!isHeaderVisible} />
     <Home onHeaderPositionChange={handleHeaderPositionChange}/>
     <AboutPage/>
     <FormationsPage/>
     <Projects/>
     <Contact/>
-    </>
+    </body>
   )
 }
 

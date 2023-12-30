@@ -4,6 +4,7 @@
     width: 100%;
     background-color: var(--corDeFundo);
     padding-bottom: 5rem;
+    overflow: hidden;
 }
 
 .AboutHeader{
