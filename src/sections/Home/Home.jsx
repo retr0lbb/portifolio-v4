@@ -1,13 +1,19 @@
+import { FaBars } from "react-icons/fa"
+import { IoMdClose } from "react-icons/io";
 import styled from "./home.module.css"
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import {useTranslation } from "react-i18next"
 import Swap from "../../components/swapButton/swap"
 
 export default function Home({onHeaderPositionChange }){
+    const [isActive, setIsActive] = useState(false)
     const { t } = useTranslation();
     const HeaderRef = useRef(null);
+    const handleIsMenuActive = () =>{
+        setIsActive(!isActive)
+    }
 
     useEffect(()=>{
         const handleScroll = () =>{
@@ -34,13 +40,16 @@ export default function Home({onHeaderPositionChange }){
                     <p>./H</p>
                 </div>
                 <div className={styled.NavList}>
-                    <ul className={styled.mainlist}>
-                        <li><a href="/#home">{t("home")}</a></li>
-                        <li><a href="/#about">{t("about")}</a></li>
-                        <li><a href="/#projects">{t("projects")}</a></li>
-                        <li><a href="/#contact">{t("contact")}</a></li>
-                        <li><Swap /></li>
+                    <ul className={`${styled.mainlist} ${isActive? styled.show: ""}`}>
+                        <li onClick={handleIsMenuActive}><a href="/#home">{t("home")}</a></li>
+                        <li onClick={handleIsMenuActive}><a href="/#about">{t("about")}</a></li>
+                        <li onClick={handleIsMenuActive}><a href="/#projects">{t("projects")}</a></li>
+                        <li onClick={handleIsMenuActive}><a href="/#contact">{t("contact")}</a></li>
+                        <li onClick={handleIsMenuActive}><Swap /></li>
+                        <li className={styled.cButton} onClick={handleIsMenuActive}><IoMdClose /></li>
+                        
                     </ul>
+                    <button className={styled.hBtton} onClick={handleIsMenuActive}><FaBars color="#3498DB" size={60} /></button>
                 </div>
             </nav>
             <div className={styled.mainBodyWrapper}>
