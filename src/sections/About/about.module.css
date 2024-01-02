@@ -5,6 +5,7 @@
     background-color: var(--corDeFundo);
     padding-bottom: 5rem;
     overflow: hidden;
+
 }
 
 .AboutHeader{
@@ -96,6 +97,7 @@
     }
     .AboutHeader{
         height: 10vh;
+        font-size: 50px;
         
     }
     .AboutMainWrapper{
@@ -115,7 +117,7 @@
         text-align: justify;
     }
     .AboutImage{
-        height: 300px;
-        width: 300px;
+        height: 14em;
+        width: 20em;
     }
 }

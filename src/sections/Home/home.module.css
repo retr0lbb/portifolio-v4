@@ -4,9 +4,10 @@ button{
     background: none;
 }
 .mainWrapper{
+
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
+    padding-bottom: 100px;
     background-color: var(--corDeFundo);
     display: flex;
     flex-direction: column;
@@ -79,7 +80,6 @@ a:hover{
     margin-top: 12vh;
     width: 100%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,10 @@ strong{
 
 
 @media screen and (min-width: 601px) and (max-width: 1150px) {
+    .NavList{
+        justify-content: end;
+        padding: 20px;
+    }
     .hBtton{
         display: block;
         opacity: 1;
@@ -157,6 +161,7 @@ strong{
     .cButton{
         display: block;
         opacity: 1;
+        float: right;
     }
     .mainBodyWrapper{
         flex-direction: column-reverse;
@@ -226,6 +231,10 @@ strong{
     }
 }
 @media screen and (min-width: 100px) and (max-width: 600px) {
+    .NavList{
+        justify-content: end;
+        padding: 20px;
+    }
     .linksWrapper{
         width: 18em;
         height: 5em;
@@ -240,6 +249,7 @@ strong{
     }
     .mainBodyWrapper{
         flex-direction: column-reverse;
+        gap: 3em;
         
     }
     .PhotoMainWrapper ,.PhotoMainWrapper div{
