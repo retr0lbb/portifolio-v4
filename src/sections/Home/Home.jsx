@@ -59,8 +59,8 @@ export default function Home({onHeaderPositionChange }){
                     </p>
                     <ul ref={HeaderRef} className={styled.linksWrapper}>
                         <li><a target="blank" href="https://github.com/retr0lbb"><FontAwesomeIcon icon={faGithub} color="#181717" size="3x"/></a> </li>
-                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/></a> </li>
-                        <li><a target="blank" href="#"><FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/></a></li>
+                        <li><a target="blank" href="https://www.linkedin.com/in/henrique-barbosa-b04240227"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" size="3x"/></a></li>
+                        <li><a target="blank" href="https://wa.me/5511999429345"><FontAwesomeIcon icon={faWhatsapp} color="#25D366" size="3x"/></a></li>
                     </ul>
                 </div>
                 <div className={styled.PhotoMainWrapper}>

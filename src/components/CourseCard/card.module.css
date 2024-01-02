@@ -71,7 +71,11 @@
 }
 @media screen and (min-width: 100px) and (max-width: 600px){
     .CardTitle{
-        font-size: 22px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .CardWrapper{
         width: 100%;
@@ -83,7 +87,8 @@
         width: 100%;
     }
     .CardDesc{
-        font-size: 14px;
+        font-size: 20px;
+        overflow-y: auto;
     }
     .CardButton{
         width: 90%;
