@@ -217,10 +217,11 @@ strong{
     }
     .MainTextWrapper{
         width: 100%;
-       
+        text-align: left;
         display: flex;
         align-items: start;
         justify-content: center;
+        
     }
     .navWrapper{
         height: 9vh;
@@ -260,8 +261,8 @@ strong{
     }
     .MainTextWrapper p{
         padding: 0px 10px 0px 10px;
-        font-size: 38px;
-        text-align: center;
+        font-size: 40px;
+        text-align: left;
     }
     .mainlist{
         transition: transform 0.5s ease-out;
