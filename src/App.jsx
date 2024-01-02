@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { inject } from "@vercel/analytics/*"
+inject()
 
 import AboutPage from "./sections/About/About"
 import Home from "./sections/Home/Home"
